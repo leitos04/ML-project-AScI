@@ -1,0 +1,6 @@
+Device: cuda
+Train Loader: 180000 images. 6000 batches of 30.
+Test Loader: 20010 images. 667 batches of 30.
+X.shape:  torch.Size([30, 1, 128, 128])
+h.shape torch.Size([30])
+Shape of the input tensor: torch.Size([30, 1, 128, 128])
