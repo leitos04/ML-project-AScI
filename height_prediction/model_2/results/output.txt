@@ -1058,3 +1058,20 @@ MSE: 0.040988 MAE: 0.175136 [Batch: 3501/6000]
 MSE: 0.068125 MAE: 0.229374 [Batch: 4001/6000]
 MSE: 0.045443 MAE: 0.164892 [Batch: 4501/6000]
 MSE: 0.047426 MAE: 0.165120 [Batch: 5001/6000]
+MSE: 0.064403 MAE: 0.228626 [Batch: 5501/6000]
+
+Training Mean MSE: 0.0650
+Training Mean MAE: 0.2132
+
+Validation Mean MSE: 0.0675
+Validation Mean MAE: 0.2191
+
+Accuracy Test: 24.5%
+4909 correct predictions of 20000
+-------------------------------------------------
+                    Epoch 45 
+-------------------------------------------------
+MSE: 0.061305 MAE: 0.213102 [Batch:    1/6000]
+MSE: 0.058094 MAE: 0.203305 [Batch:  501/6000]
+MSE: 0.058185 MAE: 0.208726 [Batch: 1001/6000]
+MSE: 0.091440 MAE: 0.268869 [Batch: 1501/6000]
