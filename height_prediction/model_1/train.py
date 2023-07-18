@@ -151,21 +151,21 @@ for epoch in range(epochs):
     mean_mae_training_list.append((epoch + 1, mae_loss_t))
     mean_mae_validation_list.append((epoch + 1, mae_loss_v))
 
-    with open("results/mse_training_values.txt", "a") as file:
-        for epoch, mse_loss_t in mean_mse_training_list:
-            file.write(f"{epoch+initial_epoch}\t{mse_loss_t:.4f}\n")
+    with open("results/mse_training_values.txt", "w") as file:
+        for e, mse_loss_t in mean_mse_training_list:
+            file.write(f"{e+initial_epoch}\t{mse_loss_t:.4f}\n")
 
-    with open("results/mse_validation_values.txt", "a") as file:
-        for epoch, mse_loss_v in mean_mse_validation_list:
-            file.write(f"{epoch+initial_epoch}\t{mse_loss_v:.4f}\n")
+    with open("results/mse_validation_values.txt", "w") as file:
+        for e, mse_loss_v in mean_mse_validation_list:
+            file.write(f"{e+initial_epoch}\t{mse_loss_v:.4f}\n")
 
-    with open("results/mae_training_values.txt", "a") as file:
-        for epoch, mae_loss_t in mean_mae_training_list:
-            file.write(f"{epoch+initial_epoch}\t{mae_loss_t:.4f}\n")
+    with open("results/mae_training_values.txt", "w") as file:
+        for ep, mae_loss_t in mean_mae_training_list:
+            file.write(f"{e+initial_epoch}\t{mae_loss_t:.4f}\n")
 
-    with open("results/mae_validation_values.txt", "a") as file:
-        for epoch, mae_loss_v in mean_mae_validation_list:
-            file.write(f"{epoch+initial_epoch}\t{mae_loss_v:.4f}\n")
+    with open("results/mae_validation_values.txt", "w") as file:
+        for e, mae_loss_v in mean_mae_validation_list:
+            file.write(f"{e+initial_epoch}\t{mae_loss_v:.4f}\n")
        
         # Check if validation loss has improved
     if mse_loss_t <= best_mse_loss:
