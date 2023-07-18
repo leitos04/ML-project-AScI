@@ -128,7 +128,7 @@ if not os.path.exists("results"):
     os.makedirs("results")
 
 epochs = 300
-initial_epoch = 43 #---------- Check this!!!
+initial_epoch = 0 #---------- Check this!!!
 
 mean_mse_training_list = []
 mean_mse_validation_list = []

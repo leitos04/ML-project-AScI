@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mkdir results 
+mkdir -p results 
 
-python3 -u train.py > results/output.txt
+python3 -u train.py >> results/output.txt
