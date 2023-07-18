@@ -1,6 +1,0 @@
-git add
-git commit -m "blablabla"
-git status -s
-git push -u origin main
-git log --oneline
-
