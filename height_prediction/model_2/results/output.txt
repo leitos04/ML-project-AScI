@@ -2245,3 +2245,121 @@ MSE: 0.004277 MAE: 0.044311 [Batch: 1001/6000]
 MSE: 0.002587 MAE: 0.042958 [Batch: 1501/6000]
 MSE: 0.003418 MAE: 0.045664 [Batch: 2001/6000]
 MSE: 0.007574 MAE: 0.066646 [Batch: 2501/6000]
+MSE: 0.003293 MAE: 0.047778 [Batch: 3001/6000]
+MSE: 0.004600 MAE: 0.048941 [Batch: 3501/6000]
+MSE: 0.003586 MAE: 0.044941 [Batch: 4001/6000]
+MSE: 0.003297 MAE: 0.046885 [Batch: 4501/6000]
+MSE: 0.003553 MAE: 0.046393 [Batch: 5001/6000]
+MSE: 0.006053 MAE: 0.063657 [Batch: 5501/6000]
+
+Training Mean MSE: 0.0047
+Training Mean MAE: 0.0519
+
+Validation Mean MSE: 0.0765
+Validation Mean MAE: 0.2241
+
+Accuracy Test: 28.5%
+5698 correct predictions of 20000
+-------------------------------------------------
+                    Epoch 95 
+-------------------------------------------------
+MSE: 0.004160 MAE: 0.052181 [Batch:    1/6000]
+MSE: 0.006107 MAE: 0.062728 [Batch:  501/6000]
+MSE: 0.002916 MAE: 0.041849 [Batch: 1001/6000]
+MSE: 0.005647 MAE: 0.046333 [Batch: 1501/6000]
+MSE: 0.002539 MAE: 0.036762 [Batch: 2001/6000]
+MSE: 0.006758 MAE: 0.060101 [Batch: 2501/6000]
+MSE: 0.003550 MAE: 0.049349 [Batch: 3001/6000]
+MSE: 0.002352 MAE: 0.039582 [Batch: 3501/6000]
+MSE: 0.002601 MAE: 0.042775 [Batch: 4001/6000]
+MSE: 0.004145 MAE: 0.051576 [Batch: 4501/6000]
+MSE: 0.005540 MAE: 0.059140 [Batch: 5001/6000]
+MSE: 0.004027 MAE: 0.052274 [Batch: 5501/6000]
+
+Training Mean MSE: 0.0047
+Training Mean MAE: 0.0517
+
+Validation Mean MSE: 15.5626
+Validation Mean MAE: 3.9089
+
+Accuracy Test: 0.0%
+0 correct predictions of 20000
+-------------------------------------------------
+                    Epoch 96 
+-------------------------------------------------
+MSE: 0.004208 MAE: 0.046875 [Batch:    1/6000]
+MSE: 0.005422 MAE: 0.057543 [Batch:  501/6000]
+MSE: 0.002912 MAE: 0.042510 [Batch: 1001/6000]
+MSE: 0.004246 MAE: 0.047027 [Batch: 1501/6000]
+MSE: 0.005902 MAE: 0.054783 [Batch: 2001/6000]
+MSE: 0.004586 MAE: 0.050086 [Batch: 2501/6000]
+MSE: 0.003528 MAE: 0.044156 [Batch: 3001/6000]
+MSE: 0.006907 MAE: 0.064159 [Batch: 3501/6000]
+MSE: 0.003148 MAE: 0.040450 [Batch: 4001/6000]
+MSE: 0.003880 MAE: 0.044358 [Batch: 4501/6000]
+MSE: 0.006738 MAE: 0.062815 [Batch: 5001/6000]
+MSE: 0.003760 MAE: 0.048640 [Batch: 5501/6000]
+
+Training Mean MSE: 0.0047
+Training Mean MAE: 0.0515
+
+Validation Mean MSE: 0.1021
+Validation Mean MAE: 0.2609
+
+Accuracy Test: 23.3%
+4665 correct predictions of 20000
+-------------------------------------------------
+                    Epoch 97 
+-------------------------------------------------
+MSE: 0.003418 MAE: 0.043300 [Batch:    1/6000]
+MSE: 0.006269 MAE: 0.056235 [Batch:  501/6000]
+MSE: 0.007654 MAE: 0.070060 [Batch: 1001/6000]
+MSE: 0.006397 MAE: 0.064308 [Batch: 1501/6000]
+MSE: 0.002493 MAE: 0.036733 [Batch: 2001/6000]
+MSE: 0.005604 MAE: 0.060468 [Batch: 2501/6000]
+MSE: 0.003941 MAE: 0.051073 [Batch: 3001/6000]
+MSE: 0.007619 MAE: 0.061643 [Batch: 3501/6000]
+MSE: 0.006313 MAE: 0.057522 [Batch: 4001/6000]
+MSE: 0.005163 MAE: 0.054091 [Batch: 4501/6000]
+MSE: 0.006817 MAE: 0.051531 [Batch: 5001/6000]
+MSE: 0.004744 MAE: 0.047204 [Batch: 5501/6000]
+
+Training Mean MSE: 0.0047
+Training Mean MAE: 0.0518
+
+Validation Mean MSE: 0.1446
+Validation Mean MAE: 0.3487
+
+Accuracy Test: 4.5%
+902 correct predictions of 20000
+-------------------------------------------------
+                    Epoch 98 
+-------------------------------------------------
+MSE: 0.004604 MAE: 0.049871 [Batch:    1/6000]
+MSE: 0.003846 MAE: 0.051460 [Batch:  501/6000]
+MSE: 0.005760 MAE: 0.061404 [Batch: 1001/6000]
+MSE: 0.005183 MAE: 0.055237 [Batch: 1501/6000]
+MSE: 0.002014 MAE: 0.032727 [Batch: 2001/6000]
+MSE: 0.004707 MAE: 0.049690 [Batch: 2501/6000]
+MSE: 0.005461 MAE: 0.055878 [Batch: 3001/6000]
+MSE: 0.004305 MAE: 0.047260 [Batch: 3501/6000]
+MSE: 0.004591 MAE: 0.059823 [Batch: 4001/6000]
+MSE: 0.003145 MAE: 0.043237 [Batch: 4501/6000]
+MSE: 0.006684 MAE: 0.062840 [Batch: 5001/6000]
+MSE: 0.004831 MAE: 0.052549 [Batch: 5501/6000]
+
+Training Mean MSE: 0.0047
+Training Mean MAE: 0.0517
+
+Validation Mean MSE: 0.0674
+Validation Mean MAE: 0.2066
+
+Accuracy Test: 32.3%
+6454 correct predictions of 20000
+-------------------------------------------------
+                    Epoch 99 
+-------------------------------------------------
+MSE: 0.003686 MAE: 0.050179 [Batch:    1/6000]
+MSE: 0.004837 MAE: 0.053907 [Batch:  501/6000]
+MSE: 0.004496 MAE: 0.046606 [Batch: 1001/6000]
+MSE: 0.003696 MAE: 0.046711 [Batch: 1501/6000]
