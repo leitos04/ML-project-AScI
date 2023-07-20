@@ -29,7 +29,9 @@ net.eval()
 #predictions = []
 
 X, h = next(iter(val_loader))
-print(X.dtype)
+print(X[0])
+#print(X.shape)
+#print(X.dtype)
 
 with torch.no_grad():	
 	X = X.to(device)

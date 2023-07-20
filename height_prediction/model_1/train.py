@@ -127,8 +127,8 @@ else:
 if not os.path.exists("results"):
     os.makedirs("results")
 
-epochs = 300
-initial_epoch = 50 #---------- Check this!!!
+epochs = 100
+initial_epoch = 0 #---------- Check this!!!
 
 mean_mse_training_list = []
 mean_mse_validation_list = []
@@ -137,7 +137,7 @@ mean_mae_training_list = []
 mean_mae_validation_list = []
 
 best_mse_loss = np.inf
-max_consecutive_failures = 8
+max_consecutive_failures = 7
 counter = 0
 
 for epoch in range(epochs):
@@ -160,7 +160,7 @@ for epoch in range(epochs):
             file.write(f"{e+initial_epoch}\t{mse_loss_v:.4f}\n")
 
     with open("results/mae_training_values.txt", "w") as file:
-        for ep, mae_loss_t in mean_mae_training_list:
+        for e, mae_loss_t in mean_mae_training_list:
             file.write(f"{e+initial_epoch}\t{mae_loss_t:.4f}\n")
 
     with open("results/mae_validation_values.txt", "w") as file:
@@ -168,7 +168,7 @@ for epoch in range(epochs):
             file.write(f"{e+initial_epoch}\t{mae_loss_v:.4f}\n")
        
         # Check if validation loss has improved
-    if mse_loss_t <= best_mse_loss:
+    if mse_loss_t < best_mse_loss:
         best_mse_loss = mse_loss_t
         counter = 0
     else:

@@ -13,9 +13,10 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 data_np = np.load('../sila_resized.npy')
 data = torch.from_numpy(data_np).float()
 
-#print(data)
-#print(data.shape)
-#print(data.dtype)
+
+print(data[0])
+print(data.shape)
+print(data.dtype)
 
 #---------------------------- Load model ----------------------------
 net = HeightPrediction().to(device)
@@ -53,3 +54,4 @@ def plot_images(images, subtitles, n_rows):
     
 
 plot_images(data, h_values, 2)
+
