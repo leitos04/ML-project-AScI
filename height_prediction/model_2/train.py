@@ -168,6 +168,7 @@ for epoch in range(epochs):
             file.write(f"{e+initial_epoch}\t{mae_loss_v:.4f}\n")
        
         # Check if validation loss has improved
+    #if round(mse_loss_t, 4) < round(best_mse_loss, 4):
     if mse_loss_t < best_mse_loss:
         best_mse_loss = mse_loss_t
         counter = 0

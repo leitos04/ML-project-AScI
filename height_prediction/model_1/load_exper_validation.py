@@ -13,10 +13,9 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 data_np = np.load('../sila_resized.npy')
 data = torch.from_numpy(data_np).float()
 
-
-print(data[0])
+#print(data)
 print(data.shape)
-print(data.dtype)
+#print(data.dtype)
 
 #---------------------------- Load model ----------------------------
 net = HeightPrediction().to(device)
@@ -28,14 +27,14 @@ net.eval()
 
 with torch.no_grad():	
 	data = data.to(device)
-	output = net(data).flatten()
+	output = net(data)
 	h_values = output.tolist()
 
 print(f"Height predictions: {h_values}")
 
 
 #------------- Plot STM images +  write height predictions ---------------
-
+"""
 def plot_images(images, subtitles, n_rows):
     n_cols = len(images) // n_rows
 
@@ -54,4 +53,4 @@ def plot_images(images, subtitles, n_rows):
     
 
 plot_images(data, h_values, 2)
-
+"""
