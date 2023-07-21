@@ -27,7 +27,7 @@ net.eval()
 
 with torch.no_grad():	
 	data = data.to(device)
-	output = net(data)
+	output = net(data).flatten()
 	h_values = output.tolist()
 
 print(f"Height predictions: {h_values}")

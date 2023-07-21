@@ -29,7 +29,7 @@ net.eval()
 #predictions = []
 
 X, h = next(iter(val_loader))
-print(X[0])
+#print(X[0])
 #print(X.shape)
 #print(X.dtype)
 
