@@ -60,3 +60,13 @@ class SPMDataset(Dataset):
 
     def _unpad_xyz(self, xyz):
         return xyz[xyz[:,-1] > 0]
+
+def normalize(X):
+    means = X.mean(dim=(1,2))
+    stds = X.std(dim=(1,2))
+
+    means = means[:, None, None]
+    stds = stds[:, None, None]
+
+    X = (X-means)/stds
+    return X

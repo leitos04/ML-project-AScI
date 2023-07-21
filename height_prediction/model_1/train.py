@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from data import SPMDataset
+from data import SPMDataset, normalize
 from models import HeightPrediction
 import contextlib
 import os
@@ -52,6 +52,8 @@ def train(dataloader, model, loss, optimizer):
 
     for batch, (X, h) in enumerate(dataloader):
         model.train()
+
+        X = normalize(X) 
         X = X.to(device)
         h = h.unsqueeze(1).to(device)  # Shape of h is now [N, 1]
 
