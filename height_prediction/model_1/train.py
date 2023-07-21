@@ -92,6 +92,7 @@ def compute_accuracy(testloader, model, tolerance):
 
     with torch.no_grad():
         for X, h in testloader:
+            X = normalize(X)
             X = X.to(device)
             h = h.unsqueeze(1).to(device)
             outputs = model(X)
