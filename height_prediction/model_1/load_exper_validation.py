@@ -1,6 +1,6 @@
 import torch
 from torch.utils.data import DataLoader
-from data import SPMDataset
+from data import SPMDataset, normalize
 from models import HeightPrediction
 import numpy as np
 import matplotlib.pyplot as plt
@@ -25,16 +25,17 @@ net.load_state_dict(torch.load('height_pred.pth'))
 
 net.eval()
 
-with torch.no_grad():	
-	data = data.to(device)
-	output = net(data).flatten()
-	h_values = output.tolist()
+with torch.no_grad():
+        data_n = normalize(data)
+        data_n = data_n.to(device)
+        output = net(data_n).flatten()
+        h_values = output.tolist()
 
 print(f"Height predictions: {h_values}")
 
 
 #------------- Plot STM images +  write height predictions ---------------
-"""
+
 def plot_images(images, subtitles, n_rows):
     n_cols = len(images) // n_rows
 
@@ -53,4 +54,4 @@ def plot_images(images, subtitles, n_rows):
     
 
 plot_images(data, h_values, 2)
-"""
+
