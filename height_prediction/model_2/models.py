@@ -1,12 +1,8 @@
-# convolutional neural network with the architecture inspired by the classical LeNet-5 (LeCun et al., 1998).
+# convolutional neural network with the architecture inspired by a VGG-network (Simonyan & Zisserman, 2015)
 
 import torch
 import torch.nn as nn
         
-# CREATE YOUR MODEL HERE
-# gets as input an STM image [N, C, 128, 128]
-# returns height prediction  [N, 1]
-
 class HeightPrediction(nn.Module):
     def __init__(self):
         super(HeightPrediction, self).__init__()

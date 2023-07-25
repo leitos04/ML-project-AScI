@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from data import SPMDataset
+from data import SPMDataset, normalize
 from models import HeightPrediction
 import contextlib
 import os
@@ -52,6 +52,8 @@ def train(dataloader, model, loss, optimizer):
 
     for batch, (X, h) in enumerate(dataloader):
         model.train()
+
+        X = normalize(X) 
         X = X.to(device)
         h = h.unsqueeze(1).to(device)  # Shape of h is now [N, 1]
 
@@ -90,6 +92,7 @@ def compute_accuracy(testloader, model, tolerance):
 
     with torch.no_grad():
         for X, h in testloader:
+            X = normalize(X)
             X = X.to(device)
             h = h.unsqueeze(1).to(device)
             outputs = model(X)
@@ -137,7 +140,7 @@ mean_mae_training_list = []
 mean_mae_validation_list = []
 
 best_mse_loss = np.inf
-max_consecutive_failures = 7
+max_consecutive_failures = 6
 counter = 0
 
 for epoch in range(epochs):
@@ -168,8 +171,7 @@ for epoch in range(epochs):
             file.write(f"{e+initial_epoch}\t{mae_loss_v:.4f}\n")
        
         # Check if validation loss has improved
-    #if round(mse_loss_t, 4) < round(best_mse_loss, 4):
-    if mse_loss_t < best_mse_loss:
+    if round(mse_loss_t, 4) < round(best_mse_loss, 4):
         best_mse_loss = mse_loss_t
         counter = 0
     else:
