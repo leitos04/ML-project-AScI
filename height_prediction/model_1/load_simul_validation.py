@@ -56,7 +56,7 @@ def plot_images(images, subtitles1, subtitles2, n_rows):
     fig, axes = plt.subplots(n_rows, n_cols, figsize=(15, 10))
     axes = axes.flatten()
 	
-    fig.suptitle("Testing simulated STM images height predictions", fontsize=16)	
+    fig.suptitle("Testing simulated STM images - height predictions model 1", fontsize=16)	
 	
     for img, subtitle1, subtitle2, ax in zip(images.cpu(), subtitles1, subtitles2, axes):
         ax.imshow(np.transpose(img.numpy(), (1, 2, 0)))

@@ -42,7 +42,7 @@ def plot_images(images, subtitles, n_rows):
     fig, axes = plt.subplots(n_rows, n_cols, figsize=(15, 10))
     axes = axes.flatten()
 	
-    fig.suptitle("Experimental STM images: silicon-carbon compound molecule", fontsize=16)	
+    fig.suptitle("Experimental STM images: silicon-carbon compound molecule - model 1", fontsize=16)	
 	
     for img, subtitle, ax in zip(images.cpu(), subtitles, axes):
         ax.imshow(np.transpose(img.numpy(), (1, 2, 0)))
