@@ -1,0 +1,3 @@
+Ref class,Precision,Recall
+No edge,0.9963,0.9969
+Edge,0.9832,0.9797

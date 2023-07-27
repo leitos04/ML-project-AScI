@@ -1,0 +1,6 @@
+Run start: Fri 21 Jul 21:16:49 EEST 2023
+   Job ID: 20261909
+   Job Name: graph_stm_model_v0
+Run start: Thu 27 Jul 15:20:15 EEST 2023
+   Job ID: 20404297
+   Job Name: graph_stm_model_v0
