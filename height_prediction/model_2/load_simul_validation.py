@@ -59,7 +59,7 @@ def plot_images(images, subtitles1, subtitles2, n_rows):
     fig.suptitle("Testing simulated STM images - height predictions model 2", fontsize=16)	
 	
     for img, subtitle1, subtitle2, ax in zip(images.cpu(), subtitles1, subtitles2, axes):
-        ax.imshow(np.transpose(img.numpy(), (1, 2, 0)))
+        ax.imshow(np.transpose(img.numpy(), (1, 2, 0)), cmap="afmhot")
         ax.set_title(f"Predicted Height: {subtitle1:.2f}\nTruth Height: {subtitle2:.2f}", fontsize=10)
         ax.axis('off')
     plt.subplots_adjust(hspace=0.5)

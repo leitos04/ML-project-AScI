@@ -45,7 +45,7 @@ def plot_images(images, subtitles, n_rows):
     fig.suptitle("Experimental STM images: silicon-carbon compound molecule - model 2", fontsize=16)	
 	
     for img, subtitle, ax in zip(images.cpu(), subtitles, axes):
-        ax.imshow(np.transpose(img.numpy(), (1, 2, 0)))
+        ax.imshow(np.transpose(img.numpy(), (1, 2, 0)), cmap="afmhot")
         ax.set_title(f"Predicted Height: {subtitle:.4f}", fontsize=12)
         ax.axis('off')
     #plt.subplots_adjust(hspace=-0.7, top=1.2)
